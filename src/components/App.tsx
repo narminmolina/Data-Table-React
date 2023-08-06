@@ -1,11 +1,11 @@
+import { useContext } from 'react';
+
+import { Table } from 'components/Table';
+import { Login } from 'components/Login';
+import { LoginContext } from 'contexts/LoginContext';
 
 export const App = () => {
-  
-  return (
-    <p>
-  Data Table
-    </p>
-  )
-}
+	const { isUserLoggedIn } = useContext(LoginContext);
 
-export default App
+	return isUserLoggedIn ? <Table /> : <Login />;
+};

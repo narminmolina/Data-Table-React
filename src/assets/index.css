@@ -26,3 +26,26 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+
+
+.login-form {
+	width: 400px;
+	margin-inline: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 18px;
+	align-items: flex-start;
+}
+
+.login-form label {
+	color: #fff;
+}
+
+.login-form .mantine-TextInput-root {
+	width: 100%;
+}
+.table-top-toolbar-custom-actions {
+	display: flex;
+	gap: 16px;
+	padding: 4px;
+}
